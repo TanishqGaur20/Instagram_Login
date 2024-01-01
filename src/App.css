@@ -62,10 +62,33 @@
   height: 95%;
   width: 50%;
   /* background-color: red; */
-  background-image: url('./insta.png');
+  /* background-image: url('./insta.png'); */
   background-size: contain;
   margin-left: 220px;
   background-repeat: no-repeat;
+  transition: back;
+  animation: halfleftimage 10s linear infinite;
+
+}
+
+
+@keyframes halfleftimage {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 0.95;
+  }
+
+  75% {
+    scale: 1;
+  }
+
+  100% {
+    scale: 0.95;
+  }
+
 }
 
 .halfRight {
@@ -131,7 +154,7 @@ button {
   border-radius: 8px;
   border: none;
   margin-top: 10px;
-  background-color: #4CB5F9;
+  background-color: #1877F2;
 
 }
 
