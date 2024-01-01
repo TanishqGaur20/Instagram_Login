@@ -32,7 +32,7 @@ const App = () => {
             </div>
             <div className='inputFields'>
               <input type="text" placeholder='Phone number,username,or email' value={username} onChange={(e) => { setusername(e.target.value) }} />
-              <input type="password" placeholder='Password' value={password} onChange={(e) => { setpassword(e.target.value) }} />
+              <input type="Password" placeholder='Password' value={password} onChange={(e) => { setpassword(e.target.value) }} />
               <button onClick={ButtonClicked}>Log in</button>
               <div className='ForOr' style={{ marginTop: '12px', height: '50px', width: '70%', display: 'flex', flexDirection: 'row' }}>
                 <hr />
