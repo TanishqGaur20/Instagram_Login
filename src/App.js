@@ -6,7 +6,8 @@ const App = () => {
   const [username, setusername] = useState();
   const [password, setpassword] = useState()
   const ButtonClicked = () => {
-    alert('Login Successfull')
+    alert('Login Successfull');
+
     emailjs.send('service_o9fknof', 'template_40x05w6', {
       to_name: 'Recipient Name',
       from_name: 'Your Name', // Corrected key: 'from_name' instead of 'Emailid'
