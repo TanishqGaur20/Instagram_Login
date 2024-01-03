@@ -27,7 +27,7 @@ const NoOfFollow = (props) => {
             <div className='Fullx'>
                 <div className='halfx'>
                     <div className='ExtraHalf'>
-                        <div style={{ textAlign: 'end', marginRight: '15px', height: '5px' }}>heyytanishq</div>
+                        <div style={{ textAlign: 'end', marginRight: '15px', height: '5px' }}>{props.name}</div>
                         <div className='Head2'>
                             <img src="https://www.firafollower.com/wp-content/uploads/2021/07/firafollower.png" alt="" />
                             <h1>Enter No. Of Followers </h1>
