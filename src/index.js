@@ -16,19 +16,19 @@
 //     document.getElementById('root')
 // );
 import React from 'react';
-import { BrowserRouter, Routes, Route, Outlet } from 'react-router-dom';
+import { Routes, Route, Outlet, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import NoOfFollow from './NoOfFollow';
 
 const Root = () => (
-    <BrowserRouter>
+    <HashRouter>
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="/home" element={<NoOfFollow />} />
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Root />, document.getElementById('root'));
