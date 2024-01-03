@@ -13,6 +13,49 @@
   }
 }
 
+.ExtraHalf {
+  height: 60%;
+  width: 50%;
+  /* border: 2px solid black; */
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Marquee {
+  height: 60px;
+  width: 100vw;
+  color: white;
+  background-color: #5253BC;
+  font-size: 25px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.Marquee h4 {
+  margin: 0px;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* .Toastify__toast {
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -38,9 +81,10 @@
   }
 }
 
+
 .Full {
   width: 100vw;
-  height: 100vh;
+  height: 93vh;
   /* background-color: gray; */
   display: flex;
   justify-content: center;
@@ -48,6 +92,26 @@
 }
 
 .half {
+  height: 86%;
+  width: 75%;
+  position: relative;
+  /* border: 2px solid black; */
+  /* background-color: green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Fullx {
+  width: 100vw;
+  height: 80vh;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.halfx {
   height: 80%;
   width: 75%;
   position: relative;
@@ -157,6 +221,115 @@ button {
   background-color: #1877F2;
 
 }
+
+/* styles.css */
+
+/* General Styles */
+.Marquee {
+  /* Add styles for Marquee div */
+}
+
+
+.ExtraHalf {
+  background-color: #5253BC;
+  height: 45vh;
+}
+
+/* Header Styles */
+.Head2 {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.Head2 img {
+  height: 70px;
+  width: 70px;
+}
+
+/* Input Styles */
+input.inputStyle {
+  border-radius: 5px;
+  margin-left: 130px;
+}
+
+select.selectStyle {
+  margin-left: 20px;
+  height: 30px;
+  width: 60px;
+  border-radius: 5px;
+}
+
+/* Error Text Styles */
+.errorText {
+  margin: 0;
+  text-align: center;
+  color: orangered;
+  text-decoration: underline;
+  textUnderlinePosition: under;
+}
+
+/* Button Styles */
+button.buttonStyle {
+  width: 160px;
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  word-spacing: 4px;
+  color: gray;
+}
+
+.footer1 {
+  /* Add styles for footer1 div */
+}
+
+.footer2 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.FooterSpan {
+  /* Add styles for FooterSpan span */
+}
+
+
+.Spinner {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 20px solid white;
+  border-top: 20px solid #4CB5F9;
+  top: 190px;
+  position: absolute;
+  animation: spinner 2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  70% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 @media (max-width:676px) {
 
@@ -286,4 +459,140 @@ button {
     width: 100%;
     margin-right: 0px;
   }
+
+
+
+
+  .ExtraHalf {
+    height: 45vh !important;
+    width: 100% !important;
+    /* border: 2px solid black; */
+    padding: 3px 8px;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+
+  .Marquee {
+    height: 50px;
+    width: 100vw;
+    color: white;
+    background-color: #5253BC;
+    font-size: 20px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .Marquee h4 {
+    margin-top: 14px;
+  }
+
+  .Fullx {
+    height: 81vh !important;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .halfx {
+    height: 80%;
+    width: 83%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* Header Styles */
+  .Head2 {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+
+  .Head2 img {
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+  }
+
+  .Head2 h1 {
+    font-size: 20px !important;
+    margin-top: 15px;
+  }
+
+  /* Input Styles */
+  input.inputStyle {
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 40px;
+    width: 160px;
+  }
+
+  select.selectStyle {
+    margin-left: 20px;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+  }
+
+  /* Error Text Styles */
+  .errorText {
+    margin: 0;
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    textUnderlinePosition: under;
+  }
+
+  .GetFOllow {
+    margin-top: 65px;
+    font-size: 14px;
+  }
+
+  .Toastclass {
+    margin-top: 150px;
+  }
+
+  /* Button Styles */
+  button.buttonStyle {
+    width: 160px;
+    margin-top: 50px;
+  }
+
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    word-spacing: 4px;
+    color: gray;
+  }
+
+  .footer1 {
+    /* Add styles for footer1 div */
+  }
+
+  .footer2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .FooterSpan {
+    /* Add styles for FooterSpan span */
+  }
+
+
+  .Spinner {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-top: 20px solid #4CB5F9;
+    top: 250px;
+    position: absolute;
+    animation: spinner 2s linear infinite;
+  }
+
 }

